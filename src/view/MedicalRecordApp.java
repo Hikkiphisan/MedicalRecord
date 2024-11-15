@@ -17,9 +17,8 @@ public class MedicalRecordApp {
             System.out.println("3. Xem danh sach cac benh an");
             System.out.println("4. Thoat");
             System.out.print("Chon chuc nang: ");
-            int choice = scanner.nextInt();
+            int choice = Integer.parseInt(scanner.nextLine());
 
-            scanner.nextLine();
 
 
             switch (choice) {

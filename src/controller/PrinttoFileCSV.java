@@ -1,8 +1,13 @@
 package controller;
 
+import exception.DuplicateMedicalRecordException;
+import model.MedicalRecord;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PrinttoFileCSV {
@@ -60,7 +65,17 @@ public class PrinttoFileCSV {
             System.err.println("Error ghi file: " + e.getMessage());
         } catch (NumberFormatException e) {
             System.err.println("Error: Khong dung dinh dang so nguyen.");
-        }
-    }
+//        } catch (DuplicateMedicalRecordException e) {
+//            System.err.println(e.getMessage());
+//        }
 
+//        List<MedicalRecord> records = new ArrayList<>();
+//        for (MedicalRecord r : records) {
+//            if (r.getRecordId().equals(record.getRecordId())) {
+//                throw new DuplicateMedicalRecordException("Benh an da ton tai.");
+//            }
+//        }
+        }
+
+    }
 }
