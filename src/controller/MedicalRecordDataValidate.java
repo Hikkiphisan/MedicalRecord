@@ -26,7 +26,7 @@ public class MedicalRecordDataValidate {
                 System.out.println("Lỗi: Mã bệnh nhân không đúng định dạng BN-XXX.");
                 isValid = false;
             }
-//hgvuygjh
+//hgvuygjhd
 
             Date admission = parseDate(admissionDate);
             if (admission == null) {
